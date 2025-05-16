@@ -2,32 +2,56 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>pudim</title>
+  <title>Pudim Delicioso</title>
   <style>
-    /* Estilo para o container usando display grid */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8dc;
+      margin: 0;
+      padding: 20px;
+    }
     .container {
       display: grid;
-      grid-template-columns: 1fr 1fr; /* duas colunas iguais */
-      gap: 20px; /* espaço entre os itens */
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
       padding: 20px;
-      border: 2px solid #333;
+      background-color: #fff0f5;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
-    /* Estilo para os itens dentro do container */
-    .item {
-      background-color: #f0f0f0;
-      padding: 10px;
-      border-radius: 5px;
+    h1 {
+      grid-column: 1 / -1;
       text-align: center;
+      color: #d2691e;
+    }
+    .imagem {
+      grid-column: 1 / 2;
+    }
+    .conteudo {
+      grid-column: 2 / 3;
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.5;
+      color: #333;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="item">Item 1</div>
-    <div class="item">Item 2</div>
-    <div class="item">Item 3</div>
-    <div class="item">Item 4</div>
+    <h1>Pudim de Leite Condensado</h1>
+    <div class="imagem">
+      <img src="https://images.unsplash.com/photo-1617196036444-4b7b7b7b7b7b" alt="Pudim de leite condensado" />
+    </div>
+    <div class="conteudo">
+      <p>O pudim de leite condensado é uma sobremesa deliciosa e cremosa, muito popular no Brasil. Sua receita simples leva poucos ingredientes, como leite condensado, ovos, leite e açúcar para a calda. É perfeito para qualquer ocasião, sendo uma opção irresistível para quem gosta de doces.</p>
+    </div>
   </div>
 </body>
 </html>
