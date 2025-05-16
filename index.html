@@ -1,39 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<style>
-.container {
-  display: grid;
-  grid-template-columns: auto auto;
-  background-color: rgb(147, 30, 242);
-  padding: 10px;
-}
-.container > div {
-  background-color: #f1f1f1;
-  border: 1px solid black;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  }
- 
- .header{
-     grid-column-start: 1;
-      grid-column-end: 3;
-      font-size: 20px;
+  <meta charset="UTF-8" />
+  <title>Página Simples com Grid</title>
+  <style>
+    /* Estilo para o container usando display grid */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* duas colunas iguais */
+      gap: 20px; /* espaço entre os itens */
+      padding: 20px;
+      border: 2px solid #333;
+    }
 
- }
-
-</style>
+    /* Estilo para os itens dentro do container */
+    .item {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-
-<div class="container">
-  <div class="header">header</div>
-  <div class="banner">banner</div>
-  <div class="content">content</div>
-  <div class="ads">ads</div>
-  <div class="footer">footer</div>
-</div>
-
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+  </div>
 </body>
 </html>
